@@ -1,23 +1,30 @@
 \documentclass[a4paper,12pt]{article}
 
-\usepackage{currvita}         % Cargamos el módulo para Curriculum Vitae
-\usepackage[spanish]{babel}   % Definimos el idioma español
-\usepackage[latin1]{inputenc} % Cargamos el modulo de codificacion de caracteres para que acepte tildes y eñes
-\usepackage{fullpage}         % Disminuye los márgenes, cabe más en cada página
+\usepackage{currvita}         % Cargamos el mï¿½dulo para Curriculum Vitae
+\usepackage[pdftex]{graphicx} % Cargamos paquete de imagenes
+\usepackage[spanish]{babel}   % Definimos el idioma espaï¿½ol
+\usepackage[ansinew]{inputenc} % Cargamos el modulo de codificacion de caracteres para que acepte tildes y eï¿½es
+\usepackage[T1]{fontenc}
+\usepackage{fullpage} 
+\usepackage{float}
 
 \title{Curriculum Vitae}
 \author{Marlon Vinicio Loayza}
 \date{\today}
 
 \topmargin  0cm   % Para reducir el margen superior e inferior
-\textheight 23cm  % Alto hoja tamaño carta 27.81cm
+\textheight 23cm  % Alto hoja tamaï¿½o carta 27.81cm
 
 \begin{document}
 
 \setlength{\cvlabelwidth}{40mm}  % Modifica el espacio para las etiquetas de los listados
 
 \begin{cv}{Curriculum Vitae}
-
+\begin{figure}[H]
+\begin{izq}
+ \includegraphics[scale=.25]{foto.png}
+\end{izq}
+\end{figure}
 \begin{cvlist}{Datos personales}
 	\item[Nombre completo] Marlon Loayza Feijoo
 	\item[Fecha de nacimiento] 23 de Enero de 1993
@@ -25,8 +32,6 @@
 		Mz 565 V 12
 		Guayaquil, Guayas, Ecuador
 	\item[Teléfono celular] (593) 991 275 170
-	\item[Correo electrónico] arthas_2301_lich@live.com
-	\item[Sitio web] https://www.facebook.com/marvinthebest
 \end{cvlist}
 
 \begin{cvlist}{Resumen de Habilidades}
@@ -48,12 +53,12 @@
 
 	\item[2010 a 2011] \textbf{D-Computer}\\
 		\emph{Mantenimiento}\\
-		Mantenimiento de hardware y software de Pc.
+		Mantenimiento de hardware y software de Pc.\\
 		\emph{Bodega}\\
-		Recepcion y entrega de equipos fuera y dentro de la empresa.
+		Recepcion y entrega de equipos fuera y dentro de la empresa.\\
 	\item[2009 a 2010] \textbf{Queso y Manjar "Doña Maurita"}\\
 		\emph{Cajero}\\
-		Compra de los materiales necesario para elaboracion del producto lacteo y venta del producto elaborado.
+		Compra de los materiales necesario para elaboracion del producto lacteo y venta del producto elaborado.\\
 		\emph{Elaborador}\\
 		Encargado de la fabricacion del producto lacteo.
 \end{cvlist}
